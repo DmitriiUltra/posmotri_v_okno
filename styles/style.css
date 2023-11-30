@@ -9,10 +9,12 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
-  padding: 133px 30px;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -104,8 +106,8 @@ ol {
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
   appearance: none;
-  color: rgba(255, 255, 255, 0.70);
-  font-family: "Fira Sans Condensed";
+  color: rgba(255, 255, 255);
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -198,7 +200,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox:before {
   font-weight: 700;
   line-height: normal;
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 1px solid currentColor;
   cursor: pointer;
 }
 
@@ -230,11 +232,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox:before {
   block-size: 100%;
   flex-direction: column;
   justify-content: space-between;
-  max-inline-size: 399px;
+  
 }
 
 .title {
-  font-family: "Oswald";
+  font-family: Oswald, Helvetica;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -250,7 +252,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox:before {
 .content__list {
   position: relative;
   max-block-size: 298px;
-  overflow: scroll;
+  overflow: auto;
   padding: 2px;
   min-inline-size: 399px;
   min-block-size: 298px;
@@ -282,7 +284,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox:before {
   background-color: #545050;
 }
 
-
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -290,12 +291,11 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox:before {
 }
 
 .content__video-card-description-container {
-  display: flex;
   display: inline-block;  
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, Helvetica;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -305,7 +305,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox:before {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: inherit;
   font-style: normal;
   font-weight: 400;
